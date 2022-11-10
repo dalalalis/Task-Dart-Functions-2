@@ -20,6 +20,9 @@ void greet(String name) {
  * isOdd(10) -> false
  */
 bool isOdd(int n) {
+  if (n % 2== 0) {
+    return false;}
+   return true 
   // Your code here
 }
 
