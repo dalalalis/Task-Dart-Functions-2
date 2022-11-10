@@ -2,6 +2,7 @@ void main() {
   greetName('Hamza');
   print(isOdd(7));
   squareOrDouble(9);
+  print(oddsSmallerThan(7));
 }
 
 /**
@@ -35,7 +36,15 @@ bool isOdd(int Num) {
  */
 
 // Your code here
-//void oddsSmallerThan(int n) {}
+int oddsSmallerThan(int n) {
+  int oddNumber = 0;
+  for (int i = 1; i < n; i++) {
+    if (isOdd(i)) {
+      oddNumber++;
+    }
+  }
+  return oddNumber;
+}
 
 /**
  * oddsSmallerThan(n):
